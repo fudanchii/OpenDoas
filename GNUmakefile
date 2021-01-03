@@ -35,7 +35,7 @@ uninstall:
 	rm -f ${DESTDIR}${MANDIR}/man5/doas.conf.5
 
 clean:
-	rm -f ${PROG} ${OBJS} ${OBJS:.o=.d} parse.c
+	rm -f ${PROG} ${OBJS} ${OBJS:.o=.d}
 
 -include ${OBJS:.o=.d}
 

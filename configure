@@ -552,8 +552,9 @@ auth=$(authmethod)
 if [ $? -eq 0 ]; then
 	printf 'Using auth method\t\t\t%s.\n' "$auth" >&2
 else
-	printf 'Error auth method\t\t\n' >&2
-	exit 1
+	# printf 'Error auth method\t\t\n' >&2
+	# exit 1
+	printf 'not using any auth\n' >&2
 fi
 
 persist=$(persistmethod)
